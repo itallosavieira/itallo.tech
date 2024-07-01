@@ -1,23 +1,14 @@
-import ArticleItemList from "@/components/ArticleItemList"
-import { getCategorisedArticles } from "@/lib/articles"
+import Link from "next/link"
 
 const HomePage = () => {
-  const articles = getCategorisedArticles()
-
   return (
     <section>
       <header>
         <h1>itallo.tech</h1>
       </header>
-      <section>
-        {articles !== null &&
-          Object.keys(articles).map((article) => (
-            <ArticleItemList
-              articles={articles[article]}
-              key={article}
-            />
-          ))}
-      </section>
+      <Link href="/posts">
+        Posts
+      </Link>
     </section>
   )
 }
