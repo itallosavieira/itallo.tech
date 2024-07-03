@@ -4,8 +4,6 @@ import matter from "gray-matter";
 import moment from "moment";
 import path from "path";
 import process from "process";
-import { remark } from "remark";
-import html from "remark-html";
 
 const postsDir = path.join(process.cwd(), "posts");
 
@@ -64,14 +62,10 @@ export const getPost = async (id: string) => {
   const fullPath = path.join(postsDir, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf-8");
   const { data, content } = matter(fileContents);
-  const processedContent = await remark()
-    .use(html)
-    .process(content);
-  const contentHtml = processedContent.toString();
 
   return {
     id,
-    contentHtml,
+    content,
     title: data.title,
     category:data.category,
     date: moment(data.date, "DD-MM-YYYY").format("MMMM Do, YYYY"),

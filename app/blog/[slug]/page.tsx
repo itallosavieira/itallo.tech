@@ -1,14 +1,12 @@
-import { getPost } from "@/lib/posts"
+import { Post } from "@/components";
+import { getPost } from "@/lib/posts";
 
 const Article = async ({ params }: { params: { slug: string } }) => {
-  const articleData = await getPost(params.slug)
+  const postData = await getPost(params.slug)
 
   return (
-    <article
-      className="article"
-      dangerouslySetInnerHTML={{ __html: articleData.contentHtml }}
-    />
+    <Post post={postData} />
   )
 }
 
-export default Article
+export default Article;

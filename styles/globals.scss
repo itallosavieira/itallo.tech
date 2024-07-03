@@ -2,3 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+h1 {
+  @apply text-5xl font-extrabold tracking-tight;
+}
+h2 {
+  @apply border-b pb-2 text-4xl font-semibold tracking-tight first:mt-0;
+}
+h3 {
+  @apply text-3xl font-semibold tracking-tight;
+}
+p {
+  @apply text-2xl [&:not(:first-child)]:mt-6;
+}
+blockquote {
+  @apply mt-6 border-l-2 pl-6 italic;
+}
+pre {
+  @apply text-xl my-4;
+}
+ul {
+  @apply my-6 ml-6 list-disc [&>li]:mt-2;
+}
+li {
+  @apply text-2xl [&:not(:first-child)]:mt-6;
+}
+strong {
+  @apply text-2xl font-bold;
+}

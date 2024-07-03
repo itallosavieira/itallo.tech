@@ -32,8 +32,8 @@ export default function RootLayout({
       }>
            <ThemeContextProvider>
             <ThemeSwitch />
-            <div className="max-w-screen-lg px-4 py-8 m-auto">
-              {children}
+            <div className="max-w-screen-lg p-16 m-auto">
+                {[children]}
             </div>
            </ThemeContextProvider>
         </body>
