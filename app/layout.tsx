@@ -1,12 +1,8 @@
+import { ThemeSwitch } from "@/components";
+import ThemeContextProvider from "@/context/theme-context";
+import "@/styles/globals.scss";
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Poppins } from "next/font/google";
-import "./globals.css";
-
-const cormorantGaramond = Cormorant_Garamond({
-  subsets: ["latin"],
-  variable: "--font-cormorant-garamond",
-  weight: ["400"]
-})
+import { Poppins } from "next/font/google";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -27,7 +23,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${cormorantGaramond.variable} ${poppins.variable} bg-neutral-100`}>{children}</body>
+      <body className={
+        `${poppins.variable} 
+        bg-gray-50
+        text-gray-950
+        dark:bg-gray-900
+        dark:text-gray-50`
+      }>
+           <ThemeContextProvider>
+            <ThemeSwitch />
+            <div className="max-w-screen-lg px-4 py-8 m-auto">
+              {children}
+            </div>
+           </ThemeContextProvider>
+        </body>
     </html>
   );
 }

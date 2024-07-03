@@ -1,4 +1,4 @@
-import Posts from "@/components/Posts"
+import { PostsList } from "@/components"
 import { getCategorisedPosts } from "@/lib/posts"
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
       <section>
         {posts !== null &&
           Object.keys(posts).map((post) => (
-            <Posts
+            <PostsList
               posts={posts[post]}
               key={post}
             />

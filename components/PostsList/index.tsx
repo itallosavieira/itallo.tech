@@ -5,17 +5,16 @@ interface Props {
   posts: IPost[]
 }
 
-const Posts = ({ posts }: Props) => {
+const PostsList = ({ posts }: Props) => {
   return (
     <div>
         {posts.map((post, id) => (
           <div key={id}>
             <p>{post.title}</p>
             <p>{post.date}</p>
-            <p>{post.id}</p>
             <p>{post.category}</p>
             <Link
-              href={`/posts/${post.id}`}
+              href={`/blog/${post.id}`}
               >
               {post.id}
             </Link>
@@ -27,4 +26,4 @@ const Posts = ({ posts }: Props) => {
   )
 }
 
-export default Posts
+export default PostsList

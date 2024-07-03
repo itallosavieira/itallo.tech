@@ -6,8 +6,8 @@ const HomePage = () => {
       <header>
         <h1>itallo.tech</h1>
       </header>
-      <Link href="/posts">
-        Posts
+      <Link href="/blog">
+        Blog
       </Link>
     </section>
   )

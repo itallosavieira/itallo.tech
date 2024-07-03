@@ -6,10 +6,11 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
+    
     extend: {
       fontFamily: {
-        cormorantGaramond: ["var(--font-cormorant-garamond)", "serif"],
         poppins: ["var(--font-poppins)", "sans-serif"],
       }
     },
