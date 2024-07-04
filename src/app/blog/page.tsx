@@ -1,24 +1,24 @@
-import { PostsList } from "@/components"
+import { Page, PostsList } from "@/components"
 import { getCategorisedPosts } from "@/lib/posts"
 
 const Home = () => {
   const posts = getCategorisedPosts()
 
   return (
-    <section>
-      <header>
-        <h1>itallo.tech</h1>
-      </header>
-      <section>
+    <Page 
+      section="Blog" 
+      title="Estudos e Reflexões"
+    >
+      <div>
         {posts !== null &&
           Object.keys(posts).map((post) => (
             <PostsList
-              posts={posts[post]}
-              key={post}
+            posts={posts[post]}
+            key={post}
             />
           ))}
-      </section>
-    </section>
+      </div>
+  </Page>
   )
 }
 

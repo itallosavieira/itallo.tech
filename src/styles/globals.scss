@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  @apply text-6xl font-extrabold tracking-tight font-spaceGrotesk;
+}
+h2 {
+  @apply border-b pb-2 text-5xl font-semibold tracking-tight first:mt-0 font-spaceGrotesk;
+}
+h3 {
+  @apply text-4xl font-semibold tracking-tight font-spaceGrotesk;
+}
+h4 {
+  @apply text-2xl text-gray-400 font-spaceGrotesk mb-2 mt-[-2rem];
+}
+p {
+  @apply text-[1.75rem] leading-9 mt-10;
+}
+a {
+  @apply text-[1.75rem] font-spaceGrotesk text-gray-500 hover:text-gray-800 transition delay-0 dark:text-gray-400 dark:hover:text-gray-100;
+}
+blockquote {
+  @apply mt-8 border-l-2 pl-6 italic;
+}
+pre {
+  @apply text-2xl my-4;
+}
+ul {
+  @apply my-6 ml-6 list-disc [&>li]:mt-8;
+}
+li {
+  @apply text-[1.75rem];
+}
+strong {
+  @apply text-[1.75rem] font-bold;
+}

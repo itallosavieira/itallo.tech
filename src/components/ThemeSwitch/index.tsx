@@ -8,12 +8,12 @@ const ThemeSwitch = () => {
 
   return (
     <button
-      className="fixed top-5 right-5 flex items-center justify-center transition-all"
+      className="transition-all"
       onClick={toggleTheme}
     >
       {theme === "light" ? 
-        <IoSunny className="fill-yellow-500 w-[1.5rem] h-[1.5rem]" /> : 
-        <IoMoon className="w-[1.5rem] h-[1.5rem]"/>}
+        <IoSunny className="w-[2rem] h-[2rem]" /> : 
+        <IoMoon className="w-[2rem] h-[2rem]"/>}
     </button>
   );
 }
