@@ -24,7 +24,7 @@ blockquote {
   @apply md:text-2xl text-xl mt-8 border-l-2 pl-6 italic;
 }
 pre {
-  @apply md:text-2xl text-xl my-4;
+  @apply md:text-xl text-[.85rem] my-4;
 }
 ul {
   @apply my-6 ml-6 list-disc;
