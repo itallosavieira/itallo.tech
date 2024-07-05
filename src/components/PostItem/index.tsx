@@ -7,14 +7,14 @@ const PostItem = ({ post }: { post: IPost }) => {
       <Link
         href={`/blog/${post.id}`}
       >
-        <h3> {post.title} </h3>
-        <p className="text-[1.25rem] mb-[-2rem] mt-[1rem]">
+        <h3 className="text-2xl"> {post.title} </h3>
+        <p className="text-[.85rem] font-semibold text-gray-400 mb-[-2rem] mt-0">
           {post.date}
         </p>
-        <p>
+        <p className="text-xl">
           {post.description}
         </p>
-        <hr className="my-8 h-[2px] bg-gray-700" />
+        <hr className="my-8 h-[2px] bg-gray-300" />
       </Link>
 
     </div>

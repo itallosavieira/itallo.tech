@@ -16,10 +16,10 @@ const Menu = () => {
         </Link>
         <nav className="flex  items-center">
           <ul className="ml-0 my-3 list-none flex gap-4">
-            <NavLink href="/about" label="About" isActive={currentPath === "/"} onMouseEnter={() => setIsLinksActive(false)} />
+            <NavLink href="/about" label="About" isActive={currentPath === "/about"} onMouseEnter={() => setIsLinksActive(false)} />
             <NavLink href="/blog" label="Blog" isActive={currentPath === "/blog"} onMouseEnter={() => setIsLinksActive(false)} />
             <NavLink href="/projects" label="Projects" isActive={currentPath === "/projects"} onMouseEnter={() => setIsLinksActive(false)} />
-            <NavLink href="" label="Links"  onMouseEnter={() => setIsLinksActive(true)} />
+            <NavLink href="" label="Links" isActive={isLinksActive}  onMouseEnter={() => setIsLinksActive(true)} />
           </ul>
           {isLinksActive && <DropdownLinks onMouseLeave={() => setIsLinksActive(false)} />}
         </nav>

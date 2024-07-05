@@ -15,13 +15,13 @@ h4 {
   @apply md:text-2xl text-xl text-gray-400 font-spaceGrotesk mb-2 mt-[-2rem];
 }
 p {
-  @apply md:text-2xl md:leading-8 text-xl leading-6 mt-8;
+  @apply md:text-xl text-[.85rem] md:leading-8 leading-6 mt-6;
 }
 a {
-  @apply md:text-2xl text-xl font-spaceGrotesk text-gray-500 hover:text-gray-800 transition delay-0 dark:text-gray-400 dark:hover:text-gray-100;
+  @apply md:text-xl text-[.85rem] font-spaceGrotesk text-gray-500 hover:text-gray-800 transition delay-0 dark:text-gray-400 dark:hover:text-gray-100;
 }
 blockquote {
-  @apply md:text-2xl text-xl mt-8 border-l-2 pl-6 italic;
+  @apply md:text-xl text-[.85rem] mt-8 border-l-2 pl-6 italic;
 }
 pre {
   @apply md:text-xl text-[.85rem] my-4;
@@ -30,8 +30,8 @@ ul {
   @apply my-6 ml-6 list-disc;
 }
 li {
-  @apply md:text-2xl text-xl mt-4;
+  @apply md:text-xl text-[.85rem] mt-4;
 }
 strong {
-  @apply md:text-2xl text-xl font-bold;
+  @apply md:text-xl text-[.85rem] font-bold;
 }
