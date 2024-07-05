@@ -10,8 +10,14 @@ interface INavLink {
 
 const NavLink = ({ href, label, isActive, target, onMouseEnter }: INavLink) => (
   <li>
-    <Link href={href} target={target} onMouseEnter={onMouseEnter} className={isActive ? "text-gray-950 dark:text-gray-100" : ""}>
-      {label}
+    <Link 
+      href={href} 
+      target={target}
+      onMouseEnter={onMouseEnter} 
+      className={`${isActive ? "text-gray-950 dark:text-gray-100" : ""}`}>
+      <span className="text-xl max-md:text-[.85rem]">
+        {label}
+      </span>
     </Link>
   </li>
 );

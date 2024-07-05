@@ -6,8 +6,8 @@ const Home = () => {
 
   return (
     <Page 
-      section="Sobre" 
-      title="Um pouco sobre mim"
+      section="Projetos" 
+      title="Meus projetos"
     >
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo esse sed accusantium repudiandae, eveniet aliquid, cupiditate officia dicta nesciunt omnis consequuntur earum temporibus quod consequatur. Exercitationem, error! Quisquam, maiores nostrum?
@@ -15,6 +15,10 @@ const Home = () => {
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo esse sed accusantium repudiandae, eveniet aliquid, cupiditate officia dicta nesciunt omnis consequuntur earum temporibus quod consequatur. Exercitationem, error! Quisquam, maiores nostrum?
       </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo esse sed accusantium repudiandae, eveniet aliquid, cupiditate officia dicta nesciunt omnis consequuntur earum temporibus quod consequatur. Exercitationem, error! Quisquam, maiores nostrum?
+      </p>
+      
   </Page>
   )
 }

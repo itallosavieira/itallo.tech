@@ -37,8 +37,8 @@ export default function RootLayout({
         dark:text-gray-100`
       }>
            <ThemeContextProvider>
-            <Menu />
-            <div className="max-w-screen-lg p-16 m-auto">
+            <Menu /> 
+            <div className="max-w-[900px] md:p-16 p-6 m-auto mb-[6rem]">
                 {[children]}
             </div>
            </ThemeContextProvider>
