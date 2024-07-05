@@ -34,11 +34,12 @@ export default function RootLayout({
         bg-gray-50
         text-gray-950
         dark:bg-gray-950
-        dark:text-gray-100`
+        dark:text-gray-100
+        `
       }>
            <ThemeContextProvider>
-            <Menu /> 
-            <div className="max-w-[900px] md:p-16 p-6 m-auto mb-[6rem]">
+          <Menu />
+            <div className="w-full md:p-16  m-auto mb-[6rem] max-w-[900px] p-6">
                 {[children]}
             </div>
            </ThemeContextProvider>

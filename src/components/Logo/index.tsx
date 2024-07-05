@@ -9,7 +9,7 @@ interface LogoSvgProps {
 
 const LogoSvg = ({ color }: LogoSvgProps) => {
   const isMobile = useBreakpoint();
-  const size = !isMobile ? 36 : 22;
+  const size = !isMobile ? 22 : 18;
   return (
     <svg width={size} height={size} viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M7.11581 22.0002V1.24553L0.355791 0.000244141H0V20.755L6.76002 22.0002H7.11581Z" fill={color}/>
