@@ -2,18 +2,18 @@ import { Menu } from "@/components";
 import ThemeContextProvider from "@/context/theme-context";
 import "@/styles/globals.scss";
 import type { Metadata } from "next";
-import { Poppins, Space_Grotesk } from "next/font/google";
+import { Poppins, Sorts_Mill_Goudy } from "next/font/google";
 
 const poppins = Poppins({
   subsets: ["latin"],
   variable: "--font-poppins",
-  weight: ["400", "600"]
+  weight: ["400", "600", "900"]
 })
 
-const spaceGrotesk = Space_Grotesk({
+const sortsMillGoudy = Sorts_Mill_Goudy({
   subsets: ["latin"],
-  variable: "--font-space-grotesk",
-  weight: ["400", "600"]
+  variable: "--font-sorts",
+  weight: ["400"]
 })
 
 export const metadata: Metadata = {
@@ -28,21 +28,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={
-        `${poppins.variable} 
-        ${spaceGrotesk.variable} 
-        bg-gray-50
-        text-gray-950
-        dark:bg-gray-950
-        dark:text-gray-100
-        `
-      }>
+      <body className={`${poppins.variable} ${sortsMillGoudy.variable} py-14`}>
+        <section className="max-w-[70rem] m-auto flex">
            <ThemeContextProvider>
-            <Menu />
-            <div className="w-full md:p-16  m-auto mb-[6rem] max-w-[900px] p-6">
+                <Menu />
                 {[children]}
-            </div>
            </ThemeContextProvider>
+        </section>
         </body>
     </html>
   );

@@ -1,31 +1,25 @@
 'use client';
 
-import { DropdownLinks, Logo, NavLink, ThemeSwitch } from "@/components";
+import { Logo } from "@/components";
 import Link from "next/link";
-import { usePathname } from 'next/navigation';
-import { useState } from 'react';
 
 const Menu = () => {
-  const currentPath = usePathname();
-  const [isLinksActive, setIsLinksActive] = useState(false);
-
   return (
-    <div className="flex items-center justify-between gap-6 max-md:bottom-0 px-4 fixed bottom-6  left-1/2 transform bg-opacity-95 hover:bg-opacity-100 -translate-x-1/2 rounded-md border-gray-300 border-2 bg-gray-50 dark:bg-gray-950 dark:border-gray-50 shadow-md">
-        <Link href="/" onMouseEnter={() => setIsLinksActive(false)} className="hover:border-none">
-          <Logo />
-        </Link>
-        <nav className="flex  items-center">
-          <ul className="ml-0 my-3 list-none flex gap-4">
-            <NavLink href="/about" label="About" isActive={currentPath === "/about"} onMouseEnter={() => setIsLinksActive(false)} />
-            <NavLink href="/blog" label="Blog" isActive={currentPath === "/blog"} onMouseEnter={() => setIsLinksActive(false)} />
-            <NavLink href="/projects" label="Projects" isActive={currentPath === "/projects"} onMouseEnter={() => setIsLinksActive(false)} />
-            <NavLink href="" label="Links" isActive={isLinksActive}  onMouseEnter={() => setIsLinksActive(true)} />
-          </ul>
-          {isLinksActive && <DropdownLinks onMouseLeave={() => setIsLinksActive(false)} />}
-        </nav>
-        <div onMouseEnter={() => setIsLinksActive(false)}>
-          <ThemeSwitch />
-        </div>
+    <div className="
+      text-end pt-14 px-8 fixed border-r-2 border-r-gray-200 lg:h-full lg:top-0
+      max-lg:bottom-0 max-lg:border-none max-lg:-translate-x-1/2 max-lg:left-1/2 max-lg:flex max-lg:gap-4 max-lg:bg-white max-lg:py-3 
+      max-lg:rounded-tl-md max-lg:rounded-tr-md
+    ">
+      <Link href="/" className="flex justify-end max-lg:hidden">
+        <Logo />
+      </Link>
+      <nav className="lg:mt-28">
+        <ul className="list-none flex flex-col gap-2  max-lg:flex-row max-lg:gap-4">
+          <li><Link className="text-gray-500" href="/about"> Sobre </Link></li>
+          <li><Link className="text-gray-500" href="/blog"> Blog </Link></li>
+          <li><Link className="text-gray-500" href="/projects"> Projetos </Link></li>
+        </ul>
+      </nav>
     </div>
   );
 }

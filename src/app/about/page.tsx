@@ -1,21 +1,34 @@
 import { Page } from "@/components"
-import { getCategorisedPosts } from "@/lib/posts"
+import Link from "next/link"
 
 const Home = () => {
-  const posts = getCategorisedPosts()
-
   return (
     <Page 
-      section="Sobre" 
-      title="Um pouco sobre mim"
+      section="O Código & Eu" 
+      title="Codando sites modernos com telinhas bonitas"
+      quote="Sou desenvolvedor frontend &amp; amo o que faço."
     >
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo esse sed accusantium repudiandae, eveniet aliquid, cupiditate officia dicta nesciunt omnis consequuntur earum temporibus quod consequatur. Exercitationem, error! Quisquam, maiores nostrum?
+        E aí, tudo bem? Sou o Itallo, pai da Eva e marido da Letícia.
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo esse sed accusantium repudiandae, eveniet aliquid, cupiditate officia dicta nesciunt omnis consequuntur earum temporibus quod consequatur. Exercitationem, error! Quisquam, maiores nostrum?
+        Não sou do sul, mas tomo chimarrão e nas horas vagas, me arrisco na 
+        música e curto ler, principalmente literatura imaginativa. Esses hobbies
+        me ajudam a relaxar e encontrar inspiração na vida.
       </p>
-  </Page>
+
+      <p>
+        Comecei com desenvolvimento web em 2017, seguidos de três anos 
+        empreendendo em outra área, o que me trouxe muitos aprendizados. Depois 
+        disso, voltei a estudar engenharia de software e atualmente trabalho em 
+        aplicações de grande porte que impactam milhões de usuários na 
+        <a href="https://minhaclaroresidencial.claro.com.br/" target="blank"> Claro Brasil.</a>
+      </p>
+      <p>
+        Gosto de estudar e tenho facilidade e disposição para aprender o que for
+        necessário. Também compartilho o que aprendo no meu <Link href="/blog">blog.</Link>
+      </p>
+    </Page>
   )
 }
 

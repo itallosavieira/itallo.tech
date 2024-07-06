@@ -12,7 +12,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         poppins: ["var(--font-poppins)", "sans-serif"],
-        spaceGrotesk: ["var(--font-space-grotesk)", "sans-serif"],
+        sortsMillGoudy: ["var(--font-sorts)", "serif"],
       }
     },
   },

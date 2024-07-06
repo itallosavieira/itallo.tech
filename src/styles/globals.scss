@@ -2,36 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+h1, h2, h3 {
+  @apply font-poppins font-black;
+}
+p, a, blockquote, ul, li, strong {
+  @apply font-sortsMillGoudy text-2xl;
+}
+
 h1 {
-  @apply md:text-5xl text-4xl font-extrabold tracking-tight font-spaceGrotesk;
+  @apply text-6xl mb-28;
 }
 h2 {
-  @apply border-b pb-2 text-4xl font-semibold tracking-tight first:mt-0 font-spaceGrotesk;
+  @apply text-5xl;
 }
 h3 {
-  @apply md:text-3xl text-2xl font-semibold tracking-tight font-spaceGrotesk;
+  @apply md:text-[2.5rem];
 }
 h4 {
-  @apply md:text-2xl text-xl text-gray-400 font-spaceGrotesk mb-2 mt-[-2rem];
+  @apply font-sortsMillGoudy text-2xl italic text-gray-500;
 }
 p {
-  @apply md:text-xl text-[.85rem] md:leading-8 leading-6 mt-6;
+  @apply mb-8 text-gray-700;
 }
 a {
-  @apply md:text-xl text-[.85rem] font-spaceGrotesk text-gray-500 hover:text-gray-800 transition delay-0 dark:text-gray-400 dark:hover:text-gray-100;
+  @apply text-pink-600 hover:opacity-60 transition;
 }
 blockquote {
-  @apply md:text-xl text-[.85rem] mt-8 border-l-2 pl-6 italic;
-}
-pre {
-  @apply md:text-xl text-[.85rem] my-4;
-}
-ul {
-  @apply my-6 ml-6 list-disc;
-}
-li {
-  @apply md:text-xl text-[.85rem] mt-4;
+  @apply font-sortsMillGoudy italic text-4xl text-gray-500 border-t-2 border-b-2  border-gray-200 py-8 my-8;
+  
 }
 strong {
-  @apply md:text-xl text-[.85rem] font-bold;
+  @apply font-bold;
 }
