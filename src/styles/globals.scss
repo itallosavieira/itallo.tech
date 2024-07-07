@@ -2,15 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-h1, h2, h3 {
-  @apply font-poppins font-black;
+
+:root {
+  --color-red: #FF5555;
+  --color-white: #44475A;
 }
-p, a, blockquote, ul, li, strong {
-  @apply font-sortsMillGoudy text-2xl;
+
+h1, h2, h3 {
+  @apply font-poppins font-black text-[#282A36];
+}
+p, a, ul, li, strong {
+  @apply font-ptSerif text-[22px] text-white;
 }
 
 h1 {
-  @apply text-6xl mb-28;
+  @apply text-6xl mb-24;
 }
 h2 {
   @apply text-5xl;
@@ -19,18 +25,18 @@ h3 {
   @apply md:text-[2.5rem];
 }
 h4 {
-  @apply font-sortsMillGoudy text-2xl italic text-gray-500;
+  @apply font-sortsMillGoudy text-2xl italic text-gray-400;
 }
 p {
-  @apply mb-8 text-gray-700;
+  @apply mb-8;
 }
 a {
-  @apply text-pink-600 hover:opacity-60 transition;
+  @apply transition-all border-b-2 italic hover:opacity-80 text-pink-600 border-pink-600;
 }
 blockquote {
   @apply font-sortsMillGoudy italic text-4xl text-gray-500 border-t-2 border-b-2  border-gray-200 py-8 my-8;
   
 }
 strong {
-  @apply font-bold;
+  @apply font-black;
 }

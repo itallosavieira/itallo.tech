@@ -13,6 +13,11 @@ const config: Config = {
       fontFamily: {
         poppins: ["var(--font-poppins)", "sans-serif"],
         sortsMillGoudy: ["var(--font-sorts)", "serif"],
+        ptSerif: ["var(--font-pt-serif)", "serif"],
+      },
+      textColor: {
+        red: "var(--color-red)",
+        white: "var(--color-white)",
       }
     },
   },

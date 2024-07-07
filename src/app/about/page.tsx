@@ -1,35 +1,34 @@
 import { Page } from "@/components"
 import Link from "next/link"
 
-const Home = () => {
+const About = () => {
   return (
     <Page 
-      section="O Código & Eu" 
-      title="Codando sites modernos com telinhas bonitas"
-      quote="Sou desenvolvedor frontend &amp; amo o que faço."
+      section="Um pouco sobre mim" 
+      title="Dev Frontend & Pai da Eva"
     >
       <p>
-        E aí, tudo bem? Sou o Itallo, pai da Eva e marido da Letícia.
+        E aí, tudo bem? Sou o Itallo, apaixonado pela minha filha Eva e pela minha esposa Letícia. 
+        Minha família é a minha maior fonte de motivação e inspiração.
       </p>
       <p>
         Não sou do sul, mas tomo chimarrão e nas horas vagas, me arrisco na 
         música e curto ler, principalmente literatura imaginativa. Esses hobbies
-        me ajudam a relaxar e encontrar inspiração na vida.
+        me ajudam a relaxar e me tornam mais criatiavo.
       </p>
-
       <p>
-        Comecei com desenvolvimento web em 2017, seguidos de três anos 
+        Comecei atuar como <strong>frontend</strong> em 2017, seguidos de três anos
         empreendendo em outra área, o que me trouxe muitos aprendizados. Depois 
         disso, voltei a estudar engenharia de software e atualmente trabalho em 
-        aplicações de grande porte que impactam milhões de usuários na 
-        <a href="https://minhaclaroresidencial.claro.com.br/" target="blank"> Claro Brasil.</a>
+        aplicações de grande porte que impactam milhões de usuários 
+        na <Link href="https://minhaclaroresidencial.claro.com.br/" target="_blank">Claro Brasil.</Link>
       </p>
       <p>
         Gosto de estudar e tenho facilidade e disposição para aprender o que for
-        necessário. Também compartilho o que aprendo no meu <Link href="/blog">blog.</Link>
+        necessário. Também compartilho o que aprendo no meu <Link target="_blank" href="/blog">blog.</Link>
       </p>
     </Page>
   )
 }
 
-export default Home
+export default About

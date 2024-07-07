@@ -6,8 +6,8 @@ const Home = () => {
 
   return (
     <Page 
-      section="Blog" 
-      title="Artigos, Estudos e Reflexões"
+      section="Blog"
+      title="Artigos, anotações e reflexões."
     >
       <div>
         {posts !== null &&

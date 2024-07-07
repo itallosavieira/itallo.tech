@@ -13,7 +13,7 @@ const ThemeSwitch = () => {
     >
       {theme === "light" ? 
         <IoSunny className="w-[1.35rem] h-[1.35rem] mt-1" /> : 
-        <IoMoon className="w-[1.35rem] h-[1.35rem] mt-1"/>}
+        <IoMoon className="w-[1.35rem] h-[1.35rem] mt-1 fill-white"/>}
     </button>
   );
 }
