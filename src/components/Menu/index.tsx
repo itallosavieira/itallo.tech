@@ -8,11 +8,7 @@ const Menu = () => {
   const activeClasses = "text-pink-600";
   const linkClasses = "border-none text-gray-500";  
   return (
-    <div className="
-      text-end pt-14 px-8 fixed lg:h-full lg:top-0
-      max-lg:bottom-0 max-lg:-translate-x-1/2 max-lg:left-1/2 max-lg:flex max-lg:gap-4 max-lg:bg-white max-lg:py-3 
-      max-lg:rounded-tl-md max-lg:rounded-tr-md
-    ">
+    <div className="h-screen top-0">
       <Link href="/" className="flex border-none justify-end max-lg:hidden hover:bg-transparent">
         <Logo />
       </Link>

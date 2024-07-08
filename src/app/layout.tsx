@@ -1,4 +1,4 @@
-import { Menu } from "@/components";
+import { Menu, Sidebar } from "@/components";
 import ThemeContextProvider from "@/context/theme-context";
 import "@/styles/globals.scss";
 import type { Metadata } from "next";
@@ -46,12 +46,15 @@ export default function RootLayout({
         ${leagueSpartan.variable}
         ${ptSerif.variable}
         py-14`}>
-        <section className="max-w-[70rem] m-auto flex">
+        <div className="max-w-[70rem] m-auto flex">
            <ThemeContextProvider>
-                <Menu />
-                {[children]}
+           <div className="flex justify-around m-auto gap-32 max-lg:flex-col">
+              <section className=""> <Menu /></section>
+              <section className="">{children}</section>
+              <section className=""><Sidebar /></section>
+            </div>
            </ThemeContextProvider>
-        </section>
+        </div>
         </body>
     </html>
   );

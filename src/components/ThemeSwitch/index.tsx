@@ -12,8 +12,8 @@ const ThemeSwitch = () => {
       onClick={toggleTheme}
     >
       {theme === "light" ? 
-        <IoSunny className="w-[1.35rem] h-[1.35rem] mt-1" /> : 
-        <IoMoon className="w-[1.35rem] h-[1.35rem] mt-1 fill-white"/>}
+        <IoSunny className="w-[2rem] h-[2rem] mt-1 fill-gray-500"/> : 
+        <IoMoon className="w-[2rem] h-[2rem] mt-1 fill-white"/>}
     </button>
   );
 }
