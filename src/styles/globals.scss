@@ -4,7 +4,7 @@
 
 
 :root {
-  --color-red: #FF5555;
+  --color-red: #FF5757;
   --color-white: #44475A;
 }
 
@@ -12,14 +12,14 @@ h1, h2, h3 {
   @apply font-poppins font-black text-[#282A36];
 }
 p, a, ul, li, strong {
-  @apply font-ptSerif text-[22px] text-white;
+  @apply font-ptSerif text-xl text-gray-700;
 }
 
 h1 {
   @apply text-6xl mb-24;
 }
 h2 {
-  @apply text-5xl;
+  @apply text-2xl mb-4 mt-16;
 }
 h3 {
   @apply md:text-[2.5rem];
@@ -31,11 +31,13 @@ p {
   @apply mb-8;
 }
 a {
-  @apply transition-all border-b-2 italic hover:opacity-80 text-pink-600 border-pink-600;
+  @apply transition-all ease-linear border-b-2 border-transparent text-[#FF5757] hover:border-[#FF5757];
+}
+pre {
+  @apply mb-8;
 }
 blockquote {
   @apply font-sortsMillGoudy italic text-4xl text-gray-500 border-t-2 border-b-2  border-gray-200 py-8 my-8;
-  
 }
 strong {
   @apply font-black;

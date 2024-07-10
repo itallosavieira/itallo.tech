@@ -1,4 +1,4 @@
-import { Menu, Sidebar } from "@/components";
+import { Menu } from "@/components";
 import ThemeContextProvider from "@/context/theme-context";
 import "@/styles/globals.scss";
 import type { Metadata } from "next";
@@ -45,16 +45,17 @@ export default function RootLayout({
         ${sortsMillGoudy.variable}
         ${leagueSpartan.variable}
         ${ptSerif.variable}
+        overflow-y-scroll
         py-14`}>
-        <div className="max-w-[70rem] m-auto flex">
            <ThemeContextProvider>
-           <div className="flex justify-around m-auto gap-32 max-lg:flex-col">
-              <section className=""> <Menu /></section>
-              <section className="">{children}</section>
-              <section className=""><Sidebar /></section>
+            <div className="relative max-w-[64rem] flex justify-between m-auto max-lg:flex-col">
+              <Menu />
+              {children}
+              {/* <div className="absolute flex right-0">
+                <ThemeSwitch />
+              </div> */}
             </div>
            </ThemeContextProvider>
-        </div>
         </body>
     </html>
   );

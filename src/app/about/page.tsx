@@ -8,19 +8,18 @@ const About = () => {
       title="Dev Frontend & Pai da Eva"
     >
       <p>
-        E aí, tudo bem? Sou o Itallo, apaixonado pela minha filha Eva e pela minha esposa Letícia. 
-        Minha família é a minha maior fonte de motivação e inspiração.
+        E aí, tudo bem? Sou o Itallo, pai da Eva e marido da Letícia.
       </p>
       <p>
-        Não sou do sul, mas tomo chimarrão e nas horas vagas, me arrisco na 
-        música e curto ler, principalmente literatura imaginativa. Esses hobbies
-        me ajudam a relaxar e me tornam mais criatiavo.
+        Não sou do sul, mas gosto de chimarrão, me arrisco na 
+        música e curto ler, principalmente literatura imaginativa. 
+        Tenho vários livros físicos, mas sempre leio no meu Kindle.
       </p>
       <p>
-        Comecei atuar como <strong>frontend</strong> em 2017, seguidos de três anos
+        Comecei a atuar como <strong>Desenvolvedor Frontend</strong> em 2017, seguidos de três anos
         empreendendo em outra área, o que me trouxe muitos aprendizados. Depois 
-        disso, voltei a estudar engenharia de software e atualmente trabalho em 
-        aplicações de grande porte que impactam milhões de usuários 
+        disso, voltei a estudar engenharia de software na <Link href="https://www.42sp.org.br/">42 São Paulo</Link> e, atualmente, trabalho em 
+        aplicações grandes utilizadas por milhões de clientes 
         na <Link href="https://minhaclaroresidencial.claro.com.br/" target="_blank">Claro Brasil.</Link>
       </p>
       <p>

@@ -8,7 +8,7 @@ const ThemeSwitch = () => {
   
   return (
     <button
-      className="transition-all"
+      className="transition-all fixed ml-[-2rem]"
       onClick={toggleTheme}
     >
       {theme === "light" ? 

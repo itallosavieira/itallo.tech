@@ -19,7 +19,7 @@ const Logo = () => {
 
   return (
     theme === 'light' ?
-      <LogoSvg color="#6b7280" /> :
+      <LogoSvg color="#545454" /> :
       <LogoSvg color="#fff" />
   );
 }
