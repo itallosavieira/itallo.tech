@@ -18,7 +18,14 @@ const config: Config = {
       textColor: {
         red: "var(--color-red)",
         white: "var(--color-white)",
-      }
+      },
+      colors: {
+        bg: 'var(--color-bg)',
+        text: 'var(--color-text)',
+        title: 'var(--color-title)',
+        subtitle: 'var(--color-subtitle)',
+        accent: 'var(--color-accent)',
+      },
     },
   },
   plugins: [],

@@ -1,4 +1,4 @@
-import { Menu } from "@/components";
+import { Menu, ThemeSwitch } from "@/components";
 import ThemeContextProvider from "@/context/theme-context";
 import "@/styles/globals.scss";
 import type { Metadata } from "next";
@@ -39,22 +39,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body className={`
         ${poppins.variable} 
         ${sortsMillGoudy.variable}
         ${leagueSpartan.variable}
         ${ptSerif.variable}
         overflow-y-scroll
-        py-14`}>
+        relative max-w-[64rem] flex justify-between m-auto max-lg:flex-col
+        py-14 px-4`}>
            <ThemeContextProvider>
-            <div className="relative max-w-[64rem] flex justify-between m-auto max-lg:flex-col">
               <Menu />
-              {children}
-              {/* <div className="absolute flex right-0">
+              <main className="max-w-[37.5rem] lg:m-auto">
+                {children}
+              </main>
+              <section className="absolute flex right-0 max-lg:hidden">
                 <ThemeSwitch />
-              </div> */}
-            </div>
+              </section>
            </ThemeContextProvider>
         </body>
     </html>

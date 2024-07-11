@@ -2,43 +2,110 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
-  --color-red: #FF5757;
-  --color-white: #44475A;
+  --color-bg-light: #f9fafb;
+  --color-text-light: #1f2937;
+  --color-title-light: #111827;
+  --color-subtitle-light: #a3a3a3;
+  --color-accent-light: #fb7185;
+  --color-border-light: #fb7185;
+
+  --color-bg-dark: #1f2937;
+  --color-text-dark: #f3f4f6;
+  --color-title-dark: #fb7185;
+  --color-subtitle-dark: #d4d4d4;
+  --color-accent-dark: #fb7185;
+  --color-border-dark: #fb7185;
+}
+
+html {
+  --color-bg: var(--color-bg-light);
+  --color-text: var(--color-text-light);
+  --color-title: var(--color-title-light);
+  --color-subtitle: var(--color-subtitle-light);
+  --color-accent: var(--color-accent-light);
+  --color-border: var(--color-border-light);
+}
+
+html.dark {
+  --color-bg: var(--color-bg-dark);
+  --color-text: var(--color-text-dark);
+  --color-title: var(--color-title-dark);
+  --color-subtitle: var(--color-subtitle-dark);
+  --color-accent: var(--color-accent-dark);
+  --color-border: var(--color-border-dark);
+}
+
+body {
+  @apply
+    bg-bg
 }
 
 h1, h2, h3 {
-  @apply font-poppins font-black text-[#282A36];
+  @apply 
+    font-poppins 
+    font-black 
+    text-title
 }
 p, a, ul, li, strong {
-  @apply font-ptSerif text-xl text-gray-700;
+  @apply 
+    font-ptSerif 
+    text-xl 
+    text-text
 }
-
 h1 {
-  @apply text-6xl mb-24;
+  @apply 
+    text-6xl 
+    mb-24
 }
 h2 {
-  @apply text-2xl mb-4 mt-16;
+  @apply 
+    text-2xl 
+    mb-4 
+    mt-16
 }
 h3 {
-  @apply md:text-[2.5rem];
+  @apply 
+    text-4xl
 }
 h4 {
-  @apply font-sortsMillGoudy text-2xl italic text-gray-400;
+  @apply 
+    font-sortsMillGoudy 
+    text-2xl 
+    italic 
+    text-subtitle
 }
 p {
-  @apply mb-8;
+  @apply 
+    mb-4
 }
 a {
-  @apply transition-all ease-linear border-b-2 border-transparent text-[#FF5757] hover:border-[#FF5757];
+  @apply 
+    text-text 
+    border-accent
+    border-b-2 
+    transition-all 
+    ease-in-out
+    duration-150
+    hover:text-accent
 }
 pre {
-  @apply mb-8;
+  @apply
+   mb-8
 }
 blockquote {
-  @apply font-sortsMillGoudy italic text-4xl text-gray-500 border-t-2 border-b-2  border-gray-200 py-8 my-8;
+  @apply 
+    font-sortsMillGoudy 
+    italic
+    text-4xl 
+    text-subtitle 
+    border-t-2 
+    border-b-2 
+  border-gray-200 
+    py-8 
+    my-8
 }
 strong {
-  @apply font-black;
+  @apply 
+    font-black
 }

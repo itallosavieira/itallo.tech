@@ -5,7 +5,7 @@ const PostItem = ({ post }: { post: IPost }) => {
   return (
       <Link
         href={`/blog/${post.id}`}
-        className="transition-all ease-in-out [&>.title]:hover:text-[#FF5757]"
+        className="transition-all ease-in-out [&>.title]:hover:text-accent"
       >
         <p className="text-[1rem] text-gray-400 mb-1">
           {new Date(post.date).toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })} | {post.category} 
