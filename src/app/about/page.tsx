@@ -1,5 +1,6 @@
 import { Page } from "@/components"
 import Link from "next/link"
+import { FaGithub, FaLinkedin } from "react-icons/fa"
 
 const About = () => {
   return (
@@ -26,6 +27,11 @@ const About = () => {
         Gosto de estudar e tenho facilidade e disposição para aprender o que for
         necessário. Também compartilho o que aprendo no meu <Link target="_blank" href="/blog">blog.</Link>
       </p>
+
+      <div className="flex gap-4 mt-16 justify-center">
+        <Link className="border-none" href="/blog"><FaGithub size={28}/></Link>
+        <Link className="border-none" href="/blog"><FaLinkedin size={28}/></Link>
+      </div>
     </Page>
   )
 }

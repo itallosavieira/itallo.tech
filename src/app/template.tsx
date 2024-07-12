@@ -2,12 +2,30 @@
 
 import { motion } from "framer-motion";
 
-const Transition = ({ children, className }: {children: React.ReactNode; className?: string}) => (
+const pageVariants = {
+  initial: {
+    opacity: 0,
+  },
+  in: {
+    opacity: 1,
+  },
+  out: {
+    opacity: 0,
+  },
+};
+
+const pageTransition = {
+  ease: 'easeInOut',
+  duration: 0.5,
+};
+
+const Transition = ({ children }: { children: React.ReactNode }) => (
   <motion.div
-    initial={{ y:20, opacity: 0 }}
-    animate={{ y:0, opacity: 1 }}
-    transition={{ ease: 'easeInOut', duration: 0.75 }}
-    className={className}
+    initial="initial"
+    animate="in"
+    exit="out"
+    variants={pageVariants}
+    transition={pageTransition}
     >
   {children}
     </motion.div>

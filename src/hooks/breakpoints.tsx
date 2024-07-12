@@ -2,12 +2,14 @@
 
 import { useEffect, useState } from 'react';
 
-const useBreakpoint = () => {
+export const useBreakpoint = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [isDesk, setIsDesk] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 640);
+      setIsDesk(window.innerWidth > 1023);
     };
 
     handleResize();
@@ -19,7 +21,5 @@ const useBreakpoint = () => {
     };
   }, []);
 
-  return isMobile;
+  return { isMobile, isDesk };
 };
-
-export default useBreakpoint;

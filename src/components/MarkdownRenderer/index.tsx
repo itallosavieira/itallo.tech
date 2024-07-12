@@ -22,7 +22,7 @@ const MarkdownRenderer = ({ children: markdown }: MarkdownRendererProps) => {
             <SyntaxHighlighter 
               style={dracula} 
               PreTag="div" 
-              className="post"
+              className="border-2 border-text"
               language={match[1]} 
               {...props}>
               {String(children).replace(/\n$/, '')}

@@ -46,11 +46,11 @@ export default function RootLayout({
         ${leagueSpartan.variable}
         ${ptSerif.variable}
         overflow-y-scroll
-        relative max-w-[64rem] flex justify-between m-auto max-lg:flex-col
+        relative max-w-[74rem] flex justify-between m-auto max-lg:flex-col
         py-14 px-4`}>
            <ThemeContextProvider>
               <Menu />
-              <main className="max-w-[37.5rem] lg:m-auto">
+              <main className="max-w-[32rem] m-auto mb-16">
                 {children}
               </main>
               <section className="absolute flex right-0 max-lg:hidden">

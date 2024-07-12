@@ -8,6 +8,5 @@ export { default as Page } from "./Page";
 export { default as Post } from "./Post";
 export { default as PostItem } from "./PostItem";
 export { default as PostsList } from "./PostsList";
-export { default as Sidebar } from "./Sidebar";
 export { default as ThemeSwitch } from "./ThemeSwitch";
 

@@ -10,7 +10,7 @@
   --color-accent-light: #fb7185;
   --color-border-light: #fb7185;
 
-  --color-bg-dark: #1f2937;
+  --color-bg-dark: #282A36;
   --color-text-dark: #f3f4f6;
   --color-title-dark: #fb7185;
   --color-subtitle-dark: #d4d4d4;
@@ -77,7 +77,7 @@ h4 {
 }
 p {
   @apply 
-    mb-4
+    mb-6
 }
 a {
   @apply 
