@@ -30,8 +30,8 @@ const About = () => {
       </p>
 
       <div className="flex gap-4 mt-16 justify-center">
-        <Link className="border-none" href="https://www.linkedin.com/in/itallosavieira/" target="_blank"><FaGithub size={28}/></Link>
-        <Link className="border-none" href="https://github.com/itallosavieira" target="_blank"><FaLinkedin size={28}/></Link>
+        <Link className="border-none" href="https://www.linkedin.com/in/itallosavieira/" target="_blank"><FaLinkedin size={28}/></Link>
+        <Link className="border-none" href="https://github.com/itallosavieira" target="_blank"><FaGithub size={28}/></Link>
       </div>
     </Page>
   )
