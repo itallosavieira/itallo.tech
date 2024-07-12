@@ -13,16 +13,17 @@ const About = () => {
       </p>
       <p>
         Não sou do sul, mas gosto de chimarrão, me arrisco na 
-        música e curto ler, principalmente literatura imaginativa. 
-        Tenho vários livros físicos, mas sempre leio no meu Kindle.
+        música e curto ler (time do Kindle), principalmente ficção.
       </p>
       <p>
-        Comecei a atuar como <strong>Desenvolvedor Frontend</strong> em 2017, seguidos de três anos
-        empreendendo em outra área, o que me trouxe muitos aprendizados. Depois 
-        disso, voltei a estudar engenharia de software na <Link href="https://www.42sp.org.br/" target="_blank">42 São Paulo</Link> e, atualmente, trabalho em 
-        aplicações grandes utilizadas por milhões de clientes 
-        na <Link href="https://minhaclaroresidencial.claro.com.br/" target="_blank">Claro Brasil.</Link>
-      </p>
+        Tenho <strong>4 anos de experiência</strong> como <strong>desenvolvedor Frontend</strong>.
+        Comecei em 2017, atuando em projetos VTEX, Shopify e Wordpress. Depois, passei três anos 
+        empreendendo em outra área, o que me trouxe muitos aprendizados. Voltei a estudar engenharia de 
+        software na <Link href="https://www.42sp.org.br/" target="_blank">42 São Paulo</Link> e, atualmente, trabalho 
+        em aplicações grandes, utilizadas por milhões de clientes na <Link href="https://minhaclaroresidencial.claro.com.br/" target="_blank">Claro Brasil</Link>, 
+        atuando em <strong>micro-frontends</strong> com <strong>React.js</strong> e <strong>Vue.js</strong>.
+    </p>
+
       <p>
         Gosto de estudar e tenho facilidade e disposição para aprender o que for
         necessário. Também compartilho o que aprendo no meu <Link href="/blog">blog.</Link>

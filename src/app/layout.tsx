@@ -50,7 +50,7 @@ export default function RootLayout({
         py-14 px-4`}>
            <ThemeContextProvider>
               <Menu />
-              <main className="max-w-[37.5rem] m-auto mb-16 pr-8 pl-4">
+              <main className="max-w-[37.5rem] max-lg:w-full m-auto mb-16">
                 {children}
               </main>
               <section className="absolute flex right-0 max-lg:hidden">
