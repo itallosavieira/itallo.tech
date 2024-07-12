@@ -1,12 +1,9 @@
 'use client';
 
 import { Logo, MenuItem, ThemeSwitch } from "@/components";
-import { useBreakpoint } from "@/hooks/breakpoints";
 import Link from "next/link";
 
-
 const Menu = () => {
-  const { isDesk } = useBreakpoint();
   return (
       <nav className="z-50 lg:border-r-2 lg:border-gray-200 fixed flex lg:flex-col lg:gap-28 lg:h-full lg:top-0 lg:pr-8 pt-14 h-12
       bottom-0 max-lg:inset-x-0 max-lg:mx-auto max-lg:items-center max-lg:justify-evenly max-lg:gap-
