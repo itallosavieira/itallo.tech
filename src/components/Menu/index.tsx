@@ -18,7 +18,9 @@ const Menu = () => {
           <MenuItem pathname="/about">Sobre</MenuItem>
           <MenuItem pathname="/blog">Blog</MenuItem>
         </ul>
-        {!isDesk && <ThemeSwitch />}
+        <div className="lg:hidden absolute right-4">
+          <ThemeSwitch />
+        </div>
       </nav>
   );
 }

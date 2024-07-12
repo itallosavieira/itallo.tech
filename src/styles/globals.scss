@@ -44,7 +44,6 @@ body {
 h1, h2, h3 {
   @apply 
     font-poppins 
-    font-black 
     text-title
 }
 p, a, ul, li, strong {
@@ -57,12 +56,14 @@ h1 {
   @apply 
     text-6xl 
     mb-24
+    font-black 
 }
 h2 {
   @apply 
     text-2xl 
     mb-4 
-    mt-16
+    mt-20
+    font-semibold
 }
 h3 {
   @apply 
@@ -108,4 +109,9 @@ blockquote {
 strong {
   @apply 
     font-black
+}
+
+img {
+  @apply
+    border-2 rounded-lg  border-accent
 }

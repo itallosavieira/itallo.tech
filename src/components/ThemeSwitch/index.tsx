@@ -11,7 +11,7 @@ const ThemeSwitch = () => {
   
   return (
     <button
-    className="transition-all flex gap-4 fixed mt-1 ml-[-3rem] max-lg:right-4"
+    className="transition-all flex gap-4 lg:fixed mt-1 ml-[-3rem] max-lg:right-4"
       onClick={toggleTheme}
       >
       {theme === "light" ? 

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from 'next/navigation';
 
 const MenuItem = ({pathname, children, className}: {pathname: string, children: React.ReactNode, className?: string}) => {
-  const isActivePathname = usePathname() === pathname;
+  const isActivePathname = usePathname().includes(pathname);
   const activeClasses = "border-accent";
   const linkClasses = "border-transparent hover:text-accent";  
   
