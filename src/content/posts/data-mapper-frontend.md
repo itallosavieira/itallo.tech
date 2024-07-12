@@ -11,7 +11,7 @@ Parece que é uma coisa super complicada, mas é bem simples: esse padrão garan
 
 ![](/posts/data-mapper-01.png)
 
-Aplicado ao Frontend, vamos considerar camadas de **Domínio** e **Persistência** da seguinte forma:
+Aplicado ao frontend, vamos considerar camadas de **Domínio** e **Persistência** da seguinte forma:
 
 ![](/posts/data-mapper-02.png)
 
@@ -20,7 +20,7 @@ Cada camada tem seu padrão de dados. Quando o frontend precisa se comunicar com
 ![](/posts/data-mapper-03.png)
 
 ## O Problema:
-Na comunicação entre Frontend e API, pode ser necessário manipular dados para que fiquem com o padrão esperado pela API. Qualquer mudança no formato dos dados na camada de Persistência pode resultar em uma cascata de atualizações em vários pontos do código, tornando a aplicação difícil de manter.
+Na comunicação entre frontend e API, pode ser necessário manipular dados para que fiquem com o padrão esperado pela API. Qualquer mudança no formato dos dados na camada de Persistência pode resultar em uma cascata de atualizações em vários pontos do código, tornando a aplicação difícil de manter.
 
 Por exemplo, se precisamos fazer um GET de informações de um usuário, mas a API usa snake_case, como "user_id":
 
