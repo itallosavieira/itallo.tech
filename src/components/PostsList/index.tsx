@@ -9,7 +9,7 @@ const PostsList = ({ posts }: Props) => {
   return (
     <div className="mt-10">
         {posts.map((post, id) => (
-          <div key={id}>
+          <div className="mb-14" key={id}>
             <PostItem post={post} />
           </div>
       ))}

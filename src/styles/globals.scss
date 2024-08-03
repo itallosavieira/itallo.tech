@@ -45,6 +45,7 @@ h1, h2, h3 {
   @apply 
     font-poppins 
     text-title
+    break-words
 }
 p, a, ul, li, strong {
   @apply 
@@ -60,14 +61,17 @@ h1 {
 }
 h2 {
   @apply 
-    text-2xl 
+    text-4xl 
     mb-4 
-    mt-20
+    mt-10
     font-semibold
 }
 h3 {
   @apply 
-    text-4xl
+    font-extrabold
+    text-2xl
+    mb-4
+    mt-20
 }
 h4 {
   @apply 
@@ -75,6 +79,13 @@ h4 {
     text-2xl 
     italic 
     text-subtitle
+}
+h5 {
+    @apply 
+      text-xl
+      mb-2
+      font-extrabold
+      mt-10
 }
 p {
   @apply 
@@ -93,17 +104,35 @@ a {
 pre {
   @apply
    mb-8
+   text-xl
 }
-blockquote {
+code > *{
+  @apply
+    text-[1rem] 
+  }
+code {
+  @apply
+    text-[1rem] 
+    bg-neutral-200
+    text-neutral-800
+    rounded-sm 
+    px-2 
+    py-1
+    font-ptSerif 
+  }
+blockquote > p {
   @apply 
     font-sortsMillGoudy 
     italic
-    text-4xl 
-    text-subtitle 
+    text-xl 
+    mb-[-0.5rem]
+}
+blockquote {
+  @apply 
     border-t-2 
     border-b-2 
   border-gray-200 
-    py-8 
+    p-4 
     my-8
 }
 strong {
@@ -116,4 +145,8 @@ img {
     border-2 
     rounded-lg  
     border-accent
+}
+li > ul {
+  @apply
+    ml-8
 }

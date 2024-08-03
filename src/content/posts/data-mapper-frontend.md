@@ -4,7 +4,7 @@ date: '04/23/2024'
 category: 'patterns'
 ---
 
-## A Definição:
+### A Definição:
 O **Data Mapper Pattern** é uma técnica fundamental para a transferência eficiente e bidirecional de dados entre a camada de Domínio e a camada de Persistência.
 
 Parece que é uma coisa super complicada, mas é bem simples: esse padrão garante que as camadas sejam independentes em relação a padronização de dados.
@@ -19,7 +19,7 @@ Cada camada tem seu padrão de dados. Quando o frontend precisa se comunicar com
 
 ![](/posts/data-mapper-03.png)
 
-## O Problema:
+### O Problema:
 Na comunicação entre frontend e API, pode ser necessário manipular dados para que fiquem com o padrão esperado pela API. Qualquer mudança no formato dos dados na camada de Persistência pode resultar em uma cascata de atualizações em vários pontos do código, tornando a aplicação difícil de manter.
 
 Por exemplo, se precisamos fazer um GET de informações de um usuário, mas a API usa snake_case, como "user_id":
@@ -50,10 +50,10 @@ const body = {
 
 Essa abordagem torna o código confuso, especialmente se precisarmos repetir a montagem do corpo da requisição frequentemente. Qualquer mudança nos campos do backend vai exigir uma revisão extensa do código, resultando em retrabalho. A solução ideal é centralizar esse tipo de tratamento, simplificando a manutenção e reduzindo a probabilidade de erros futuros.
 
-## A Solução
+### A Solução
 Centralizar o tratamento de dados em um arquivo de Data Mapper para cada contexto.
 
-## Implementação:
+### Implementação:
 Uma abordagem comum é colocar os Data Mappers próximos à camada de Persistência, como nas services que interagem com as APIs. 
 
 Por exemplo, considere a seguinte estrutura de pastas:
@@ -126,5 +126,5 @@ sendUserInfo: async (obj) => {
 }
 ```
 
-## Conclusão
+### Conclusão
 O Data Mapper Pattern no frontend é uma técnica muito útil para manter a separação de responsabilidades entre as camadas de Domínio e Persistência. Centralizando o tratamento dos dados, o código fica mais modular, fácil de entender e menos suscetível a erros e independente de camadas externas. Incorporar Data Mappers na arquitetura frontend aumentará a qualidade e a facilidade de manutenção da aplicação.

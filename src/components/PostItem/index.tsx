@@ -8,12 +8,11 @@ const PostItem = ({ post }: { post: IPost }) => {
         className="transition-all ease-in-out [&>.title]:hover:text-accent"
       >
         <p className="text-[1rem] text-gray-400 mb-1">
-          {new Date(post.date).toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })} | {post.category} 
+          {new Date(post.date).toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })} | #{post.category} 
         </p>
         <p className="title">
           {post.title}
         </p>
-        <hr className="my-8 h-[2px] bg-gray-100 mb-8" />
       </Link>
   )
 }

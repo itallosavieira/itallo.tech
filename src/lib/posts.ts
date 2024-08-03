@@ -34,8 +34,8 @@ const getSortedPostsByDate = (): IPost[] => {
     const dataA = new Date(a.date);
     const dataB = new Date(b.date);
 
-    if (dataA > dataB) return 1
-    if (dataA < dataB) return -1
+    if (dataA > dataB) return -1
+    if (dataA < dataB) return 1
     return 0
   })
 }
